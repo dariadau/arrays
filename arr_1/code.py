@@ -1,10 +1,13 @@
 import doctest
+
 import numpy as np
+from typing import Tuple
+from typing import Union
 
 
 class Array:
 
-    def __init__(self, size, num=0):
+    def __init__(self, size: Union[int, Tuple[int, ...], list[int]] = 5, num=0):
         """
         Создание и подготовка к работе объекта "Массив".
         """
